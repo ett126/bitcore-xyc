@@ -6,31 +6,25 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
-  addressVersion: 0x00,
+  magic: hex('f1a585c0'),
+  addressVersion: 28,
   privKeyVersion: 128,
-  P2SHVersion: 5,
+  P2SHVersion: 78,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('6FE28C0AB6F1B372C1A6A246AE63F74F931E8365E15A089C68D6190000000000'),
-    merkle_root: hex('3BA3EDFD7A7B12B27AC72C3E67768F617FC81BC3888A51323A9FB8AA4B1E5E4A'),
+    hash: hex('00000010ed34e226ed31c5f84e8e2d6f72bb0f7e4d14fe1fb05b7da428715981'),
+    merkle_root: hex('082c2651a8735b696ad502c09d5ffcae11e7b8b8692df5f336861e2f712690a4'),
     height: 0,
-    nonce: 2083236893,
+    nonce: 4454047,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1231006505,
-    bits: 486604799,
+    timestamp: 1522681200,
+    bits: 503382015,
   },
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
   ],
-  defaultClientPort: 8333
+  defaultClientPort: 8543
 };
 
 exports.mainnet = exports.livenet;

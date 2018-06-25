@@ -10,6 +10,7 @@ exports.livenet = {
   addressVersion: 28,
   privKeyVersion: 128,
   P2SHVersion: 78,
+  bech32Prefix: 'xyc',
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
@@ -35,6 +36,7 @@ exports.testnet = {
   addressVersion: 0x6f,
   privKeyVersion: 239,
   P2SHVersion: 196,
+  bech32Prefix: 'txyc',
   hkeyPublicVersion: 0x043587cf,
   hkeyPrivateVersion: 0x04358394,
   genesisBlock: {
